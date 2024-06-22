@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, , user-scalable=no" />
+  <meta name="description" content="Mi portafolio de evidencias" />
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./assets/containers/img/perfil/contacto.jpg" />
+  <!-- Estilos creados en CSS3 (La carpeta se ubica en /assets/containers/css/)-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Nuestro portafolio de evidencias</title>
+</head>
+<!--
+  La etiqueta body invoca a una función js navbarToggle(elementoUno, elementoDos) para permitir desplegar el nav en responsive design
+  recibe 2 parametros: 1. Nombre del elemento que desplegara el navbar. 2. La lista que se mostrará.
+-->
+
+<body id="pageTop" onload="navbarToggle('view-menu', 'nav-ul');">
+  <nav class="main-container-nav">
+    <a href="#pageTop" class="a-profile">
+      <span class="profile-hidden">
+        <img class="circle-image" src="./assets/containers/img/perfil/imagen_perfil.png" alt="Oscar Reyes" />
+        <label>Desarollo sostenible</label>
+      </span>
+    </a>
+    <span class="header-container-fixed">
+      <span class="text-header">portafolio evidencia</span>
+      <!-- elementoUno para invocar a la funcion del body-->
+      <button type="button" id="view-menu"><i class="fa fa-bars"></i> </button>
+    </span>
+    <!-- elementoDos para invocar a la funcion del body-->
+    <div class="div-ul" id="nav-ul">
+      <ul class="container-nav-ul">
+        <li><a href="#about"><i class="fa fa-graduation-cap"></i>Primer parcial</a></li>
+        <li><a href="#education"><i class="fa fa-graduation-cap"></i> Segundo parcial</a></li>
+        <li><a href="#briefcase"><i class="fa fa-graduation-cap"></i> Tercer parcial</a></li>
+        <li><a href="#skills"><i class="fa fa-server"></i> Proyecto</a></li>
+        <li><a href="#awards"><i class="fas fa-award"></i>Integrantes</a></li>
+      </ul>
+    </div>
+    <div class="div-social-icons">
+    
+      <small>2MV2 </small>
+      <small>Desarrollo Sostenible</small>
+    </div>
+  </nav>
+  <main class="main-container">
+
+    <section class="section-header-background" id="about">
+      <div class="heading-section">
+        <h1 class="heading-text-primary">Evidencias<span class="heading-text-secondary"> Tercer parcial</span></h1>
+        <h3 class="subheading">Mercadotecnia digital</h3>
+      </div>
+    </section>
+
+    <div class="space-containers">
+      <h2>Primer parcial</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+
+      <div class="card">
+        <div class="header-card">
+          <h3>¿Qué hicimos?</h3>
+        </div>
+
+        <div class="body-card">
+          <p>
+            
+            Trabajamos los diferentes temas vistos en clase: Sostenibilidad y marketing digital, principios de 
+            sostenibilidad, escenarios sostenibles de Schwartz, Teorías de Schwart, un aporte desde la prospectiva territorial y elementos socioculturale,
+            naturales y económicos.
+         
+          </p>
+        </div>
+     
+        <div class="two-container">
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+            <div class="card-container">
+              <h3>DIMENSIONES DE ELKINGTON</h3>
+              <p>Los principios de la sostenibilidad son los fundamentos que guían hacia un
+                desarrollo que satisfaga las necesidades del presente sin comprometer la capacidad de futuras generaciones de satisfacer sus propias necesidades
+                Elkington identificó tres dimensiones que deben considerarse en la búsqueda de la sostenibilidad</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi2', 'close-bi2');">
+            <div class="card-container">
+              <h3>LA RESILIENCIA DE MEADOWS</h3>
+              <p>Donella Meadows y sus colegas del MIT, en "Límites del crecimiento: 30 años después" (2004), analizan el crecimiento económico sin límites en un mundo finito y sus impactos ambientales y sociales.
+
+                Meadows introduce la resiliencia como la capacidad de un sistema para adaptarse y recuperarse frente a perturbaciones.</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi3', 'close-bi3');">
+            <div class="card-container">
+              <h3>Teorias de Schwartz </h3>
+              <p>Schwartz ofrece una visión
+                integral sobre cómo desarrollar
+                y utilizar escenarios sostenibles
+                para abordar la incertidumbre y
+                la complejidad en la toma de
+                decisiones</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi"><i class="fa fa-times"></i></span>
+                <h3>DIMENSIONES DE ELKINGTON</h3>
+              </div>
+            
+              <div class="modal-body">
+                <p>1</p>
+                <embed src="./assets/containers/pdfs/1P_C1.pdf" type="application/pdf" width="100%" height="600px">
+              </div>
+            </div>
+          </div>
+
+             <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+             <div class="modal" id="modal-bi2">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <span id="close-bi2"><i class="fa fa-times"></i></span>
+                  <h3>Título del proyecto</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Modal 2</p>
+                </div>
+              </div>
+            </div>
+
+               <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi3">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi3"><i class="fa fa-times"></i></span>
+                <h3>Título del proyecto</h3>
+              </div>
+              <div class="modal-body">
+                <p>3 modal</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="education">      
+      <h2>Segundo parcial</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Instituto</h3>
+          <label>GRADO</label>
+        </div>
+        <div class="body-card">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="two-container">
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi2', 'close-bi2');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi3', 'close-bi3');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi"><i class="fa fa-times"></i></span>
+                <h3>Título del proyecto</h3>
+              </div>
+              <div class="modal-body">
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+
+             <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+             <div class="modal" id="modal-bi2">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <span id="close-bi2"><i class="fa fa-times"></i></span>
+                  <h3>Título del proyecto</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Modal 2</p>
+                </div>
+              </div>
+            </div>
+
+               <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi3">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi3"><i class="fa fa-times"></i></span>
+                <h3>Título del proyecto</h3>
+              </div>
+              <div class="modal-body">
+                <p>3 modal</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="briefcase">
+      <h2>Tercer parcial</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>¿Qué hicimos?</h3>
+        </div>
+
+        <div class="body-card">
+          <p>
+            
+            Trabajamos los diferentes temas vistos en clase: Sostenibilidad y marketing digital, principios de 
+            sostenibilidad, escenarios ssotenibles de Schwartz, Teorías de Schwart, un aporte desde la prospectiva territorial y elementos socioculturale,
+            naturales y económicos.
+         
+          </p>
+        </div>
+     
+        <div class="two-container">
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi2', 'close-bi2');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi3', 'close-bi3');">
+            <div class="card-container">
+              <h3>Título del proyecto</h3>
+              <p>Texto descriptivo</p>
+              <small>Clic para conocer más sobre el contenido.</small>
+            </div>
+          </div>
+          <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi"><i class="fa fa-times"></i></span>
+                <h3>Título del proyecto</h3>
+              </div>
+              <div class="modal-body">
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+
+             <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+             <div class="modal" id="modal-bi2">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <span id="close-bi2"><i class="fa fa-times"></i></span>
+                  <h3>Título del proyecto</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Modal 2</p>
+                </div>
+              </div>
+            </div>
+
+               <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+          <div class="modal" id="modal-bi3">
+            <div class="modal-container">
+              <div class="modal-header">
+                <span id="close-bi3"><i class="fa fa-times"></i></span>
+                <h3>Título del proyecto</h3>
+              </div>
+              <div class="modal-body">
+                <p>3 modal</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="skills">
+      <h2>Proyecto</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <div class="two-container">
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"> </progress>
+            </div>
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <div class="two-container">
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"> </progress>
+            </div>
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="awards">
+      <h2>Integrantes</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="main-footer">
+    <div class="footer-content">
+      <img class="circle-image-footer" src="./assets/containers/img/perfil/imagen_perfil.png" alt="Oscar Reyes" />
+     
+      <small>Medios de contacto</small>
+      <div class="div-social-icons">
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="#"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer> 
+  <!-- Funciones JS -->
+  <!-- Permite invocar a fontawesome para integrar iconos -->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>  
+  <script src="./assets/js/functions.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
